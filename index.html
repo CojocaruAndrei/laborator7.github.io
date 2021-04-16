@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<!-- The head element is a container for metadata (data about data). -->
+
+<head>
+    <title>First Web App</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Introduction to Web Development">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Ovidiu Schipor">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/first.css">
+    <script src="./js/first.js" defer></script>
+</head>
+
+<!-- The body tag defines the document's content. -->
+
+<body>
+    <div id="content">
+        <img src="./img/first-students.jpg" alt="first students are nice" />
+        <h1>First Web App</h1>
+        <form>
+            <input type="text" id="name" placeholder="Enter the student's name" />
+            <input type="text" id="grade" placeholder="Enter the student's grade" />
+
+            <select id="specialization">
+                <option value="" disabled selected>Choose the specialization</option>
+                <option value="Computer Science">Computer Science</option>>
+                <option value="Electronics">Electronics</option>
+                <option value="Electric Systems">Electric Systems</option>
+                <option value="Automatics">Automatics</option>
+            </select>
+            <div id="gender">
+                <input type="radio" id="male" name="gender" value="male"> Male
+                <input type="radio" id="female" name="gender" value="female"> Female
+            </div>
+            <input type="button" value="Save student's data" onclick="onSendButtonClick()">
+            <input type="button" value="Reset student's data" onclick="onResetButtonClick()">
+        </form>
+        <div id="messages"></div>
+    </div>
+</body>
+
+</html>
